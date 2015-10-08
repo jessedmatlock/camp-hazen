@@ -1,3 +1,6 @@
+/* @override 
+	http://www.ymca.com/css/app.css */
+
 /* line 364, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.2/"; }
@@ -1773,15 +1776,16 @@ button, .button {
   display: inline-block;
   padding: 1rem 2rem 1.0625rem 2rem;
   font-size: 1rem;
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #E1600A;
+  border-color: #E1600A;
   color: #FFFFFF;
+  border-radius: 10px !important;
   transition: background-color 300ms ease-out; }
   /* line 159, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_buttons.scss */
   button:hover,
   button:focus, .button:hover,
   .button:focus {
-    background-color: #007095; }
+    background-color: #c15208; }
   /* line 165, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_buttons.scss */
   button:hover,
   button:focus, .button:hover,
@@ -1789,9 +1793,9 @@ button, .button {
     color: #FFFFFF; }
   /* line 220, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_buttons.scss */
   button.secondary, .button.secondary {
-    background-color: #e7e7e7;
-    border-color: #b9b9b9;
-    color: #333333; }
+    background-color: #fff;
+    border:1px solid #ccc;
+    color: #666; }
     /* line 159, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.secondary:hover,
     button.secondary:focus, .button.secondary:hover,
@@ -1801,7 +1805,7 @@ button, .button {
     button.secondary:hover,
     button.secondary:focus, .button.secondary:hover,
     .button.secondary:focus {
-      color: #333333; }
+      color: #fff; }
   /* line 221, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_buttons.scss */
   button.success, .button.success {
     background-color: #43AC6A;
@@ -3200,7 +3204,7 @@ button::-moz-focus-inner {
 /* Standard Forms */
 /* line 387, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 form {
-  margin: 0 0 1rem; }
+  margin: 0 0 2rem !important; }
 
 /* Using forms within rows, we need to set some defaults */
 /* line 92, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -3234,10 +3238,11 @@ form .row textarea.columns {
 /* Label Styles */
 /* line 393, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 label {
-  color: #4d4d4d;
+  color: #666;
+  font-family: "Cachet-Book", Verdana, Arial, Helvetica, Sans-Serif;
   cursor: pointer;
   display: block;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   margin-bottom: 0;
@@ -3338,11 +3343,10 @@ span.postfix, label.postfix {
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 0;
+  border-radius: 25px !important;
   background-color: #FFFFFF;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cccccc;
+  border: none;
+  max-width: 100%;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   display: block;
@@ -3350,16 +3354,13 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   font-size: 0.875rem;
   height: 2.3125rem;
   margin: 0 0 1rem 0;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: border-color 0.15s linear, background 0.15s linear;
-  -moz-transition: border-color 0.15s linear, background 0.15s linear;
-  -ms-transition: border-color 0.15s linear, background 0.15s linear;
-  -o-transition: border-color 0.15s linear, background 0.15s linear;
-  transition: border-color 0.15s linear, background 0.15s linear; }
+  
+   }
   /* line 138, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
   input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
     background: #fafafa;
@@ -3501,42 +3502,45 @@ textarea {
 
 /* line 488, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 ::-webkit-input-placeholder {
-  color: #cccccc; }
+  color: #666; }
 
 /* line 492, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #cccccc; }
+  color: #666; }
 
 /* line 496, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #cccccc; }
+  color: #666; }
 
 /* line 500, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 :-ms-input-placeholder {
-  color: #cccccc; }
+  color: #666; }
 
 /* Add height value for select elements to match text input height */
 /* line 506, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
-  background-color: #FAFAFA;
+  background-color: #fff;
   border-radius: 0;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
-  background-position: 100% center;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUAMTAvNy8xNVuOZJQAAACOSURBVCiRlZDBCYNAFESfeksTKSCnsJCDHYQ0YAX/ZhWpYvZiFZIehL0EtIqcc00uKyio7A78y8zwGH5hZj1wBwq29QNekh47+UolUB/AiFmdApuBbUIvpQNAFUJ4O+fOwHWn00l6pgLLxYJpI59y1sHid2Z2AQbgFK0vcJM05gDnhXjvR6ABPvGa6GXpD3fpHrtFhF69AAAAAElFTkSuQmCC);  background-position: 100% center;
   background-repeat: no-repeat;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cccccc;
-  color: rgba(0, 0, 0, 0.75);
-  font-family: inherit;
-  font-size: 0.875rem;
-  line-height: normal;
-  padding: 0.5rem;
-  border-radius: 0;
-  height: 2.3125rem; }
+-webkit-appearance: none !important;
+-moz-appearance: none !important;
+border: none;
+display: block;
+border-radius: 25px !important;
+color: #666;
+font-family: "Cachet-Book", Verdana, Arial, Helvetica, Sans-Serif; 
+font-size: 0.975rem;
+line-height: normal;
+padding: 0.5rem 1rem;
+border-radius: 0;
+height: 2.3125rem;
+  outline: none;
+   }
   /* line 337, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
   select::-ms-expand {
     display: none; }
@@ -3545,8 +3549,8 @@ select {
     border-radius: 3px; }
   /* line 361, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
   select:hover {
-    background-color: #f3f3f3;
-    border-color: #999999; }
+    background-color: #fff;
+  }
   /* line 366, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
   select:disabled {
     background-color: #DDDDDD;
@@ -3581,9 +3585,19 @@ input[type="file"] {
 /* We add basic fieldset styling */
 /* line 546, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
 fieldset {
-  border: 1px solid #DDDDDD;
-  margin: 1.125rem 0;
-  padding: 1.25rem; }
+	margin: 1.125rem 0 2.5rem;
+	padding: 1.25rem;
+	border: none;
+	background: #F0F3F1;  
+	border-radius: 25px;
+	color: #666666;
+ }
+ fieldset p {
+ 	color: #666666;
+ 	font: normal 1em/1.5em "Cachet-Medium", Verdana, Arial, Helvetica, Sans-Serif; 
+ 	margin: 10px 0;
+ 	
+ 	}
   /* line 279, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_forms.scss */
   fieldset legend {
     background: #FFFFFF;
@@ -8180,19 +8194,6 @@ body:not(.home) .main-nav-row {
 .footer-inner-content {
   float: right; }
 
-/* line 407, /Applications/MAMP/htdocs/ymca/scss/app.scss */
-.social-icons {
-  margin: 0 0 10px;
-  padding: 0;
-  list-style: none; }
-
-/* line 412, /Applications/MAMP/htdocs/ymca/scss/app.scss */
-.social-icons li {
-  display: inline-block; }
-
-/* line 416, /Applications/MAMP/htdocs/ymca/scss/app.scss */
-.social-icons .social-icon {
-  color: #B3B3B3; }
 
 @media screen and (max-width: 1023px) {
   /* line 426, /Applications/MAMP/htdocs/ymca/scss/app.scss */
@@ -8330,3 +8331,13 @@ body:not(.home) .main-nav-row {
 /* line 557, /Applications/MAMP/htdocs/ymca/scss/app.scss */
 .zebra-list .tier strong {
   color: #666; }
+
+ul.social-icons {
+	display: block;
+	list-style: none;
+	margin: 0 0 60px;
+}
+.social-icons li {
+	display: inline-block;
+	
+}

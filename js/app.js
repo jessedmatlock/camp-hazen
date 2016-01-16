@@ -4,4 +4,16 @@ $('.colors:not(.manual)').each(function () {
     str = '<span>' + str.split(/\s+(?!&)/).join('</span> <span>') + '</span>';
     $(this).find('a').html(str); 
 });
-$(".home #top-header").backstretch("http://camp-hazen.com/wp-content/themes/revive-master/img/slide.jpg");	
+var slider = $("#home-slider");
+	slider.owlCarousel({
+		items: 1,
+		loop: true,
+		autoWidth: false,
+		autoplay: true,
+		animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+		dots: false, // paginaton dots
+		nav : true, // Show next and prev buttons
+	    smartSpeed:450,
+		responsiveBaseElement: $('#top-header')
+});  

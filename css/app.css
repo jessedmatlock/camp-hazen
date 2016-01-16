@@ -6200,8 +6200,9 @@ meta.foundation-mq-topbar {
       padding: 0 0.4375rem; }
       /* line 573, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #555555;
-        background: #FFFFFF; }
+background: #E3620A;
+color: #fff;
+         }
     /* line 583, /Applications/MAMP/htdocs/ymca/bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       background: transparent;
@@ -8075,9 +8076,11 @@ img.rounded {
 section#top-header {
   padding: 45px 0 0;
   position: relative;
-  background-color: #aaa;
+  background-color: transparent;
   margin-bottom: 70px;
-  height: 275px; }
+  height: 275px;
+  background-size: cover !important;
+   }
 
 /* line 302, /Applications/MAMP/htdocs/ymca/scss/app.scss */
 .home section#top-header {
@@ -8085,6 +8088,28 @@ section#top-header {
   position: relative;
   height: auto;
   margin: 0; }
+
+section#top-header #home-slider {
+	display: none;
+}
+.home section#top-header.sliding #home-slider {
+	display: block;
+}
+@media screen and (min-width: 1024px) {
+	.home section#top-header.sliding {
+		background: transparent !important;
+	}
+}
+@media screen and (max-width: 1023px) {
+.home section#top-header.sliding {
+	background: url(../img/page-header.jpg) 0 0 no-repeat !important;
+}
+
+	.home section#top-header.sliding #home-slider {
+		display: none !important;
+	}
+	
+}
 
 /* line 309, /Applications/MAMP/htdocs/ymca/scss/app.scss */
 section#top-header #logo {

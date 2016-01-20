@@ -13,7 +13,14 @@ var slider = $("#home-slider");
 		animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 		dots: false, // paginaton dots
-		nav : true, // Show next and prev buttons
+		nav : false, // Show next and prev buttons
 	    smartSpeed:450,
 		responsiveBaseElement: $('#top-header')
 });  
+	$(".slider-next").click(function(){
+		slider.trigger('next.owl.carousel');
+	});
+	$(".slider-prev").click(function(){
+		slider.trigger('prev.owl.carousel');
+	});
+	

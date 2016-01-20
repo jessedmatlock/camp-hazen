@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>join.html</string>
+	<string>index.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -15,6 +15,8 @@
 			<string>bower_components</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>css</string>
 			<key>regexFolderFilter</key>
@@ -31,6 +33,8 @@
 			<string>javascripts</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>js</string>
 			<key>regexFolderFilter</key>
@@ -68,19 +72,21 @@
 			<key>filename</key>
 			<string>home.html</string>
 			<key>lastUsed</key>
-			<date>2015-10-07T23:00:41Z</date>
+			<date>2016-01-16T03:50:33Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
+			<key>lastUsed</key>
+			<date>2016-01-16T03:50:33Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>join.html</string>
 			<key>lastUsed</key>
-			<date>2015-10-08T00:33:04Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2016-01-16T00:11:02Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -94,7 +100,7 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>185</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -106,23 +112,37 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>6</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>261</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>229</integer>
 		</dict>
+		<key>css/app.css</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>directors.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>7</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>265</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -134,34 +154,81 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>52</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>26</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>175</integer>
+			<integer>19</integer>
+		</dict>
+		<key>index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>34</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>30</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>35</integer>
+			</dict>
 		</dict>
 		<key>join.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>55</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>169</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>134</integer>
+			<integer>131</integer>
+		</dict>
+		<key>js/app.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>19</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>directors.html</string>
 		<string>home.html</string>
+		<string>index.html</string>
+		<string>css/app.css</string>
+		<string>js/app.js</string>
 		<string>join.html</string>
 		<string>camp.html</string>
 		<string>about.html</string>
@@ -169,6 +236,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{10, 70}, {1617, 987}}</string>
+	<string>{{705, 70}, {922, 987}}</string>
 </dict>
 </plist>
